@@ -15,7 +15,8 @@ function newConnection(socket){
     socket.on('disconnect', () => {      
       delete pessoas[socket.id]
        console.log(pessoas)
-    });    
+    });
+  
   
     function cordenada(total){      
       pessoas[socket.id]={
