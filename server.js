@@ -8,6 +8,7 @@ io.sockets.on('connection', newConnection);
 var pessoas = {}
 console.log('servidor rodando na porta ' + porta)
 
+
 function newConnection(socket){
   console.log('Nova conexão ' + socket.id); 
   socket.on('coordenadas', cordenada);    
